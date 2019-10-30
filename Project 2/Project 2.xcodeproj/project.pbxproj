@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18F56044236A416700616EE7 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F56043236A416700616EE7 /* SwitchView.swift */; };
+		18F56046236A460C00616EE7 /* ValueSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F56045236A460C00616EE7 /* ValueSetterView.swift */; };
 		4632C74D2364DAB1000867CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C74C2364DAB1000867CD /* AppDelegate.swift */; };
 		4632C7512364DAB1000867CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7502364DAB1000867CD /* ViewController.swift */; };
 		4632C7542364DAB1000867CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7522364DAB1000867CD /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		18F56043236A416700616EE7 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		18F56045236A460C00616EE7 /* ValueSetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueSetterView.swift; sourceTree = "<group>"; };
 		4632C7492364DAB1000867CD /* Project 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4632C74C2364DAB1000867CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4632C7502364DAB1000867CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				4632C74C2364DAB1000867CD /* AppDelegate.swift */,
 				4632C7502364DAB1000867CD /* ViewController.swift */,
 				4632C7522364DAB1000867CD /* Main.storyboard */,
+				18F56045236A460C00616EE7 /* ValueSetterView.swift */,
 				18F56043236A416700616EE7 /* SwitchView.swift */,
 				4632C7552364DAB2000867CD /* Assets.xcassets */,
 				4632C7572364DAB2000867CD /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				4632C7512364DAB1000867CD /* ViewController.swift in Sources */,
 				4632C74D2364DAB1000867CD /* AppDelegate.swift in Sources */,
 				18F56044236A416700616EE7 /* SwitchView.swift in Sources */,
+				18F56046236A460C00616EE7 /* ValueSetterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
