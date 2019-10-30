@@ -41,6 +41,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="selectorUpdated:" destination="Awg-Vd-jaw" eventType="valueChanged" id="C7j-eR-zKI"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn all switches on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4j-lm-NwW">
                                 <rect key="frame" x="131" y="518" width="151" height="21"/>
@@ -58,10 +61,16 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-Ba-dS7">
                                 <rect key="frame" x="134" y="280" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch1Updated:" destination="Awg-Vd-jaw" eventType="valueChanged" id="HdI-ax-WF8"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R6j-Df-sOs">
                                 <rect key="frame" x="134" y="368" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch2Updated:" destination="Awg-Vd-jaw" eventType="valueChanged" id="OAo-0R-x8M"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNP-Hr-0Mb">
                                 <rect key="frame" x="241" y="285" width="12" height="21"/>
@@ -82,6 +91,14 @@
                         <viewLayoutGuide key="safeArea" id="ef6-K1-Tu0"/>
                     </view>
                     <navigationItem key="navigationItem" title="One" id="BLt-wM-zOz"/>
+                    <connections>
+                        <outlet property="continueButton" destination="xA0-mP-dQA" id="g53-F6-sIA"/>
+                        <outlet property="selector" destination="0uk-4Z-GIu" id="01e-zq-g0B"/>
+                        <outlet property="switch1" destination="DeI-Ba-dS7" id="ZBe-9C-CBE"/>
+                        <outlet property="switch1Label" destination="zNP-Hr-0Mb" id="ub4-Gt-b7y"/>
+                        <outlet property="switch2" destination="R6j-Df-sOs" id="HR4-Ve-2VF"/>
+                        <outlet property="switch2Label" destination="Jeq-gd-xQA" id="ElF-aO-U7u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOh-ud-qak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
