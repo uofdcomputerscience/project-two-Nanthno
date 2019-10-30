@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F56044236A416700616EE7 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F56043236A416700616EE7 /* SwitchView.swift */; };
 		4632C74D2364DAB1000867CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C74C2364DAB1000867CD /* AppDelegate.swift */; };
-		4632C74F2364DAB1000867CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C74E2364DAB1000867CD /* SceneDelegate.swift */; };
 		4632C7512364DAB1000867CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7502364DAB1000867CD /* ViewController.swift */; };
 		4632C7542364DAB1000867CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7522364DAB1000867CD /* Main.storyboard */; };
 		4632C7562364DAB2000867CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7552364DAB2000867CD /* Assets.xcassets */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18F56043236A416700616EE7 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		4632C7492364DAB1000867CD /* Project 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4632C74C2364DAB1000867CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4632C74E2364DAB1000867CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4632C7502364DAB1000867CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4632C7532364DAB1000867CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4632C7552364DAB2000867CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				4632C74C2364DAB1000867CD /* AppDelegate.swift */,
-				4632C74E2364DAB1000867CD /* SceneDelegate.swift */,
 				4632C7502364DAB1000867CD /* ViewController.swift */,
 				4632C7522364DAB1000867CD /* Main.storyboard */,
+				18F56043236A416700616EE7 /* SwitchView.swift */,
 				4632C7552364DAB2000867CD /* Assets.xcassets */,
 				4632C7572364DAB2000867CD /* LaunchScreen.storyboard */,
 				4632C75A2364DAB2000867CD /* Info.plist */,
@@ -140,7 +140,7 @@
 			files = (
 				4632C7512364DAB1000867CD /* ViewController.swift in Sources */,
 				4632C74D2364DAB1000867CD /* AppDelegate.swift in Sources */,
-				4632C74F2364DAB1000867CD /* SceneDelegate.swift in Sources */,
+				18F56044236A416700616EE7 /* SwitchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Project 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Project 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
