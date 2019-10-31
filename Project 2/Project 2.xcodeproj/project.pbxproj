@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1818167D236A60A200B08C38 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818167C236A60A200B08C38 /* PickerView.swift */; };
 		18F56044236A416700616EE7 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F56043236A416700616EE7 /* SwitchView.swift */; };
 		18F56046236A460C00616EE7 /* ValueSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F56045236A460C00616EE7 /* ValueSetterView.swift */; };
 		18F56048236A4F1300616EE7 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F56047236A4F1300616EE7 /* DatePickerView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1818167C236A60A200B08C38 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		18F56043236A416700616EE7 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		18F56045236A460C00616EE7 /* ValueSetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueSetterView.swift; sourceTree = "<group>"; };
 		18F56047236A4F1300616EE7 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				4632C74C2364DAB1000867CD /* AppDelegate.swift */,
 				4632C7502364DAB1000867CD /* ViewController.swift */,
 				4632C7522364DAB1000867CD /* Main.storyboard */,
+				1818167C236A60A200B08C38 /* PickerView.swift */,
 				18F56047236A4F1300616EE7 /* DatePickerView.swift */,
 				18F56045236A460C00616EE7 /* ValueSetterView.swift */,
 				18F56043236A416700616EE7 /* SwitchView.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				4632C7512364DAB1000867CD /* ViewController.swift in Sources */,
 				18F56048236A4F1300616EE7 /* DatePickerView.swift in Sources */,
+				1818167D236A60A200B08C38 /* PickerView.swift in Sources */,
 				4632C74D2364DAB1000867CD /* AppDelegate.swift in Sources */,
 				18F56044236A416700616EE7 /* SwitchView.swift in Sources */,
 				18F56046236A460C00616EE7 /* ValueSetterView.swift in Sources */,
