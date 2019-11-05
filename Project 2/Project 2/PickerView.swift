@@ -20,10 +20,7 @@ class PickerView: UIViewController {
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var capitalText: UITextField!
     @IBOutlet weak var continueButton: UIButton!
-    @IBOutlet weak var outputLabel: UILabel!
     
-    var outputState = -1
-    var outputTexts = ["Congratualations, you finished!", "Wait, why would you do that? You'd already won.", "Ah, there you go, you win now.", "Ok, whatever you did, change it back and just leave it there.", "Good job! Now just leave it alone...", "No! Why?!", "Read this carefully: just... leave it like that.", "And, you didn't. Do you just enjoy messing with me?", "Just make up your mind already! Do you want to win or not?", "AHHH! Stop it!", "I think you just want to see how many text snippets I'm willing to say but I refuse to play your game.", "nope", "nope", "nope", "nope", "Ah, you are a persistant one, aren't you", "You win", "You lose", "You win", "You lose", "Ok, I'm done. I'm going to go get some coffee or something. Knock yourself out with that picker there.", "", "", "", "", "", "", "And, you're still at it. I think I'm just going to sit back and watch you messing with those controls.", "", "", "Still at it. Enjoying yourself, eh?", "", "Do-DO-do-dodo-do-DO-do--do-DO-do-DO-DO-dododododo.", "You like Jepardy?", "You know what, I'm going to go take a nap now. You have fun messing around with all those things. See you later.", "", "", "", "", "", "Ok, seriously, stop. That's I can't go to sleep with all these function calls baraging me.", "And you don't care do you.", "Fine, I'll just put these headphones on. Goodbye."]
     
     override func viewDidLoad() {
         statePicker.delegate = self
@@ -31,49 +28,11 @@ class PickerView: UIViewController {
     }
     
     func updateContinue() {
-        let shouldEnable = capitals[selectedCell] == (capitalText.text)!.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        if continueButton.isEnabled == true && shouldEnable == false {
-            incrementOutput()
-        }
-        continueButton.isEnabled = shouldEnable
+        continueButton.isEnabled = capitals[selectedCell] == (capitalText.text)!.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
     @IBAction func capitalTextUpdated(_ sender: Any) {
         updateContinue()
-    }
-    
-    
-    @IBAction func continueTapped(_ sender: Any) {
-        if outputState == -1 || outputState % 2 == 1 {
-            incrementOutput()
-        }
-        
-    }
-    
-    func incrementOutput() {
-        outputState += 1
-        if outputState < outputTexts.count {
-            outputLabel.text = outputTexts[outputState]
-        }
-        else {
-            outputLabel.text = ""
-        }
-        if outputState == 4 {
-            DispatchQueue.global().async {
-                self.delayedCongrats(val: self.outputState)
-            }
-        }
-    }
-    
-    
-    func delayedCongrats(val: Int) {
-        sleep(5)
-        if outputState == val {
-            DispatchQueue.main.async {
-                self.outputLabel.text = "There, see: You Win! \nNow just leave it like that and you will keep winning."
-            }
-        }
     }
     
 }
