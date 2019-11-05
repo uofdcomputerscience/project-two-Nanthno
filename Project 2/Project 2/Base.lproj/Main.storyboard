@@ -109,7 +109,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ef6-K1-Tu0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="One" id="BLt-wM-zOz"/>
+                    <navigationItem key="navigationItem" title="Switches" id="BLt-wM-zOz"/>
                     <connections>
                         <outlet property="continueButton" destination="Leg-5a-A1g" id="20n-lb-FUr"/>
                         <outlet property="selector" destination="0uk-4Z-GIu" id="01e-zq-g0B"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="-888.40579710144937" y="-54.241071428571423"/>
         </scene>
-        <!--Two-->
+        <!--Numbers-->
         <scene sceneID="ayw-OB-fS5">
             <objects>
-                <viewController title="Two" id="FXl-4q-Rf1" customClass="ValueSetterView" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Numbers" title="Numbers" id="FXl-4q-Rf1" customClass="ValueSetterView" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gca-BI-eXR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,17 +204,16 @@
                         <outlet property="sliderValue" destination="fCt-NW-I5M" id="GCz-2u-vJ6"/>
                         <outlet property="stepper" destination="UVB-Pe-edx" id="Gpa-jc-rXe"/>
                         <outlet property="stepperValue" destination="p1J-dl-6Iq" id="j9L-eV-52G"/>
-                        <outletCollection property="stepperValue" destination="p1J-dl-6Iq" collectionClass="NSMutableArray" id="IHB-OA-9D1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXE-yD-e4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-142.02898550724638" y="-54.241071428571423"/>
         </scene>
-        <!--Date Picker View-->
+        <!--Dates-->
         <scene sceneID="A7M-JF-wcE">
             <objects>
-                <viewController id="s4e-zb-s8E" customClass="DatePickerView" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dates" id="s4e-zb-s8E" customClass="DatePickerView" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HoB-Mr-TAa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,7 +262,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iNt-KV-4Qt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0rz-3p-Pyi"/>
+                    <navigationItem key="navigationItem" title="Dates" id="0rz-3p-Pyi"/>
                     <connections>
                         <outlet property="continueButton" destination="Fqb-cd-QQ8" id="uQW-hK-HBd"/>
                         <outlet property="datePicker" destination="K3J-xm-6kO" id="JHC-8C-jxq"/>
@@ -274,10 +273,10 @@
             </objects>
             <point key="canvasLocation" x="634.78260869565224" y="-54.241071428571423"/>
         </scene>
-        <!--Picker View-->
+        <!--States & Capitals-->
         <scene sceneID="TiQ-yu-rxu">
             <objects>
-                <viewController id="rO2-Tc-UFN" customClass="PickerView" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="States &amp; Capitals" id="rO2-Tc-UFN" customClass="PickerView" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aH-cE-KZc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,7 +324,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H0w-JO-UZO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PQB-zV-0rH"/>
+                    <navigationItem key="navigationItem" title="States &amp; Captials" id="PQB-zV-0rH"/>
                     <connections>
                         <outlet property="capitalText" destination="vFN-7N-NAR" id="34R-TT-Pob"/>
                         <outlet property="continueButton" destination="IhD-N5-5O7" id="yBJ-Gm-yMv"/>
@@ -336,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="1362.3188405797102" y="-54.241071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Victory-->
         <scene sceneID="3dp-NH-5b2">
             <objects>
-                <viewController id="Xqe-DX-DuO" sceneMemberID="viewController">
+                <viewController title="Victory" id="Xqe-DX-DuO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2pJ-3d-APF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
