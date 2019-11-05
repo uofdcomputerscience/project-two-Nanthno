@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rO2-Tc-UFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r5F-0E-YHE">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -218,6 +218,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iNt-KV-4Qt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0rz-3p-Pyi"/>
                     <connections>
                         <outlet property="continueButton" destination="Fqb-cd-QQ8" id="uQW-hK-HBd"/>
                         <outlet property="datePicker" destination="K3J-xm-6kO" id="JHC-8C-jxq"/>
@@ -252,6 +253,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="continueTapped:" destination="rO2-Tc-UFN" eventType="touchUpInside" id="SW7-kd-soS"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vFN-7N-NAR">
                                 <rect key="frame" x="100" y="375" width="215" height="30"/>
@@ -263,13 +267,22 @@
                                     <action selector="capitalTextUpdated:" destination="rO2-Tc-UFN" eventType="editingChanged" id="gC8-vj-Cq8"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRK-eJ-7ga">
+                                <rect key="frame" x="65" y="576" width="284" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="H0w-JO-UZO"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PQB-zV-0rH"/>
                     <connections>
                         <outlet property="capitalText" destination="vFN-7N-NAR" id="34R-TT-Pob"/>
                         <outlet property="continueButton" destination="IhD-N5-5O7" id="9RL-Xc-yjq"/>
+                        <outlet property="outputLabel" destination="pRK-eJ-7ga" id="fyM-Ww-xJb"/>
                         <outlet property="statePicker" destination="dcc-xW-Q6O" id="ev6-XB-QcD"/>
                     </connections>
                 </viewController>
@@ -277,5 +290,24 @@
             </objects>
             <point key="canvasLocation" x="1362.3188405797102" y="-54.241071428571423"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4DB-zS-WNm">
+            <objects>
+                <navigationController id="r5F-0E-YHE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dGh-LP-c6U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rO2-Tc-UFN" kind="relationship" relationship="rootViewController" id="cun-XJ-cki"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKw-r6-P07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="-781"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cun-XJ-cki"/>
+    </inferredMetricsTieBreakers>
 </document>
